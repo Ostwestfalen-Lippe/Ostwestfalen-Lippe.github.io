@@ -35,6 +35,24 @@ The above copyright notice and this permission notice shall be included in all c
   <link href="assets/css/paper-kit.css?v=2.2.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <!-- <link href="assets/demo/demo.css" rel="stylesheet" /> -->
+  <script type="text/javascript">
+    function UnCryptMailto(s) {
+      var n = 0;
+      var r = "";
+      for (var i = 0; i < s.length; i++) {
+        n = s.charCodeAt(i);
+        if (n >= 8364) {
+          n = 128;
+        }
+        r += String.fromCharCode(n - 1);
+      }
+      return r;
+    }
+
+  function linkTo_UnCryptMailto(s) {
+    location.href = UnCryptMailto(s);
+  }
+</script>
 </head>
 
 <body class="landing-page sidebar-collapse">
@@ -115,7 +133,7 @@ The above copyright notice and this permission notice shall be included in all c
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="title"><i class="nc-icon nc-bulb-63"></i> Projekt Idee</h2>
-            <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
+            <h5 class="description">Die interaktive, multimodale OWL•Kultur-Plattform soll das kulturelle Angebot der Region bündeln und künftig besser sicht- und nutzbar machen sowie möglichst viele Schnittstellen zu bereits bestehenden Systemen und anderen Diensten einrichten. Sie richtet sich an Kulturanbieter, Kulturvermittler sowie Nutzer der Kulturangebote und ermöglicht, passende Kulturangebote mittels individualisierter Filtermöglichkeiten zu finden, Kulturakteure auch bereichsübergreifend besser miteinander zu vernetzen, die Sichtbarkeit des Ehrenamts und der Vereine zu stärken, regionale Grenzen zu überwinden und – insbesondere für den ländlichen Raum – Mobilität zu gewährleisten, um so auch hier Kulturteilhabe für alle zu ermöglichen. Kulturakteure profitieren von der OWL•Kultur-Plattform, da diese zudem Unterstützungsleistungen für die Organisation von Kulturveranstaltungen und -projekten bereithält. Somit kann dieses intelligente, zielgruppenspezifische und nutzerorientierte Assistenzsystem einen Beitrag dazu leisten, OWL als Kulturmarke zu etablieren, indem das Kulturpublikum die Kulturregion OWL stärker als Ganzes wahrnimmt.</h5>
           </div>
         </div>
         <br/>
@@ -124,11 +142,11 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="col-md-3">
             <div class="info">
               <div class="icon icon-danger">
-                <i class="nc-icon nc-album-2"></i>
+                <i class="nc-icon nc-zoom-split"></i>
               </div>
               <div class="description">
                 <h4 class="info-title">Sichtbarmachung für Kulturinteressierte</h4>
-                <p class="description">Spend your time generating new ideas. You don't have to think of implementing.</p>
+                <p class="description">Platzhalter Beschreibung</p>
                 <a href="#sichtbarmachung_kulturinteressierte" class="btn btn-link btn-danger">weiterlesen</a>
               </div>
             </div>
@@ -136,11 +154,11 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="col-md-3">
             <div class="info">
               <div class="icon icon-danger">
-                <i class="nc-icon nc-bulb-63"></i>
+                <i class="nc-icon nc-alert-circle-i"></i>
               </div>
               <div class="description">
                 <h4 class="info-title">Unterstützung der Kulturakteure</h4>
-                <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient.</p>
+                <p>Platzhalter Beschreibung</p>
                 <a href="#unterstuetung_kulturakteure" class="btn btn-link btn-danger">weiterlesen</a>
               </div>
             </div>
@@ -148,11 +166,11 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="col-md-3">
             <div class="info">
               <div class="icon icon-danger">
-                <i class="nc-icon nc-chart-bar-32"></i>
+                <i class="nc-icon nc-settings-gear-65"></i>
               </div>
               <div class="description">
                 <h4 class="info-title">Technologische Innovation</h4>
-                <p>Choose from a veriety of many colors resembling sugar paper pastels.</p>
+                <p>Platzhalter Beschreibung</p>
                 <a href="#technologische_innovation" class="btn btn-link btn-danger">weiterlesen</a>
               </div>
             </div>
@@ -160,11 +178,11 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="col-md-3">
             <div class="info">
               <div class="icon icon-danger">
-                <i class="nc-icon nc-sun-fog-29"></i>
+                <i class="nc-icon nc-user-run"></i>
               </div>
               <div class="description">
                 <h4 class="info-title">Prozess<br/> Innovation</h4>
-                <p>Find unique and handmade delightful designs related items directly from our sellers.</p>
+                <p>Platzhalter Beschreibung</p>
                 <a href="#prozess_innovation" class="btn btn-link btn-danger">weiterlesen</a>
               </div>
             </div>
@@ -177,10 +195,8 @@ The above copyright notice and this permission notice shall be included in all c
         <div class="container">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
-                <h2 class="title">Sichtbarmachung für Kulturinteressierte</h2>
-                <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
-                <br>
-                <a href="#paper-kit" class="btn btn-danger btn-round">See Details</a>
+                <h2 class="title"><i class="nc-icon nc-zoom-split"></i> Sichtbarmachung für Kulturinteressierte</h2>
+                <h5 class="description">Platzhalter Beschreibung</h5>
               </div>
             </div>
             <br/>
@@ -192,10 +208,8 @@ The above copyright notice and this permission notice shall be included in all c
         <div class="container">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
-                <h2 class="title">Unterstützung der Kulturakteure</h2>
-                <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
-                <br>
-                <a href="#paper-kit" class="btn btn-danger btn-round">See Details</a>
+                <h2 class="title"><i class="nc-icon nc-alert-circle-i"></i> Unterstützung der Kulturakteure</h2>
+                <h5 class="description">Platzhalter Beschreibung</h5>
               </div>
             </div>
             <br/>
@@ -207,10 +221,8 @@ The above copyright notice and this permission notice shall be included in all c
         <div class="container">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
-                <h2 class="title">Technologische Innovation</h2>
-                <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
-                <br>
-                <a href="#paper-kit" class="btn btn-danger btn-round">See Details</a>
+                <h2 class="title"><i class="nc-icon nc-settings-gear-65"></i> Technologische Innovation</h2>
+                <h5 class="description">Platzhalter Beschreibung</h5>
               </div>
             </div>
             <br/>
@@ -222,10 +234,8 @@ The above copyright notice and this permission notice shall be included in all c
         <div class="container">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
-                <h2 class="title">Prozess Innovation</h2>
-                <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
-                <br>
-                <a href="#paper-kit" class="btn btn-danger btn-round">See Details</a>
+                <h2 class="title"><i class="nc-icon nc-user-run"></i> Prozess Innovation</h2>
+                <h5 class="description">Platzhalter Beschreibung</h5>
               </div>
             </div>
             <br/>
@@ -242,7 +252,7 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="card card-profile card-plain">
               <div class="">
                 <a href="https://www.axongmbh.de/" target="_blank">
-                  <img src="assets/img/axon.png" alt="...">
+                  <img src="assets/img/axon.png" alt="Logo aXon Gesellschaft für Informationssysteme mbH">
                 </a>
               </div>
               <div class="card-body">
@@ -253,7 +263,7 @@ The above copyright notice and this permission notice shall be included in all c
                   </div>
                 </a>
                 <p class="card-description text-center">
-                  Teamwork is so important that it is virtually impossible for you to reach the heights of your capabilities or make the money that you want without becoming very good at it.
+                  Platzhalter Beschreibung
                 </p>
               </div>
               <div class="card-footer text-center">
@@ -267,7 +277,7 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="card card-profile card-plain">
               <div class="">
                 <a href="https://www.ostwestfalen-lippe.de/kultur10/owl-kulturburo.html" target="_blank">
-                  <img style="height:10em;" src="assets/img/owlgmbh.jpg" alt="...">
+                  <img style="height:10em;" src="assets/img/owlgmbh.jpg" alt="Logo Ostwestfalen-Lippe GmbH">
                 </a>
               </div>
               <div class="card-body">
@@ -278,7 +288,7 @@ The above copyright notice and this permission notice shall be included in all c
                   </div>
                 </a>
                 <p class="card-description text-center">
-                  A group becomes a team when each member is sure enough of himself and his contribution to praise the skill of the others. No one can whistle a symphony. It takes an orchestra to play it.
+                  Platzhalter Beschreibung
                 </p>
               </div>
               <div class="card-footer text-center">
@@ -292,7 +302,7 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="card card-profile card-plain">
               <div class="">
                 <a href="https://www.sicp.de" target="_blank">
-                  <img style="height:10em;" src="assets/img/logo_SICP.jpg" alt="...">
+                  <img style="height:10em;" src="assets/img/logo_SICP.jpg" alt="Logo Software Innovation Campus Paderborn">
                 </a>
               </div>
               <div class="card-body">
@@ -303,7 +313,7 @@ The above copyright notice and this permission notice shall be included in all c
                   </div>
                 </a>
                 <p class="card-description text-center">
-                  The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
+                  Platzhalter Beschreibung
                 </p>
               </div>
               <div class="card-footer text-center">
@@ -320,40 +330,8 @@ The above copyright notice and this permission notice shall be included in all c
       <div class="container">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
-            <h2 class="text-center">Keep in touch?</h2>
-            <form class="contact-form">
-              <div class="row">
-                <div class="col-md-6">
-                  <label>Name</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="nc-icon nc-single-02"></i>
-                      </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Name">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <label>Email</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="nc-icon nc-email-85"></i>
-                      </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Email">
-                  </div>
-                </div>
-              </div>
-              <label>Message</label>
-              <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
-              <div class="row">
-                <div class="col-md-4 ml-auto mr-auto">
-                  <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
-                </div>
-              </div>
-            </form>
+            <h2 class="text-center">Möchtest Du weitere Informationen?</h2>
+            <p>Dann schreib eine E-Mail an <a href="javascript:linkTo_UnCryptMailto('nbjmup;Bsjbof!Tdinjuu.Diboepo!=b/tdinjuu.diboepoApxm.lvmuvscvfsp/ef?');">Ariane Schmitt-Chandon <a [dot] schmitt-chandon [at] owl-kulturbuero [dot] de></a> vom OWL Kulturbüro der Ostwestfalen-Lippe GmbH.</p>
           </div>
         </div>
       </div>
@@ -365,13 +343,7 @@ The above copyright notice and this permission notice shall be included in all c
         <nav class="footer-nav">
           <ul>
             <li>
-              <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>
-            </li>
-            <li>
-              <a href="http://blog.creative-tim.com/" target="_blank">Blog</a>
-            </li>
-            <li>
-              <a href="https://www.creative-tim.com/license" target="_blank">Licenses</a>
+              <a href="https://dev.owl.cs.upb.de" target="_blank">OWL.Kultur-Plattform Test Seite</a>
             </li>
           </ul>
         </nav>
